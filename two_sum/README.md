@@ -32,16 +32,43 @@ The system will generate the output using the inputs so that the relation betwee
 input and output is met
 
 ### Main Scenario
-Describe the basic happy scenario
+Input: nums contain all positive numbers and target is positive
+What the system has to do: The system will select two numbers such that
+nums[idx1] >= target/2 and nums[idx2] <= target/2
 
 ### Alternative Scenarios
 Describe all the possible sad scenarios
 
 #### Alternative Scenario 1
-Scenario 1
+Input: nums contain all negative numbers and target is negative
+What the system has to do: The system has to process main scenario in absolute
+fashion
 
 #### Alternative Scenario 2
-Scenario 2
+Input: nums contain both positive and negative numbers and target is positive
+What the system has to do: The system will select one positive and one negative
+number such that nums[idx1] >= target and nums[idx2] <= 0
+
+#### Alternative Scenario 3
+Input: nums contain both positive and negative numbers and target is negative
+What the system has to do: The system will select one positive and one negative
+number such that nums[idx1] <= target and nums[idx2] >= 0
+
+#### Alternative Scenario 4
+Input: nums contain all positive numbers and target is negative
+What the system has to do: This case is not possible based on assumptions
+
+#### Alternative Scenario 5
+Input: nums contain all negative numbers and target is positive
+What the system has to do: This case is not possible based on assumptions
+
+#### Alternative Scenario 6
+Input: nums contain all positive numbers and target is less than the minimum number in nums
+What the system has to do: This case is not possible based on assumptions
+
+#### Alternative Scenario 7
+Input: nums contain all negative numbers and target is greater than the maximum number in nums
+What the system has to do: This case is not possible based on assumptions
 
 ## White Box
 Describe how the system has to do
