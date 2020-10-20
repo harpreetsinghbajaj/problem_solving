@@ -51,3 +51,6 @@ Scenario 1
 #### Alternative Scenario 2
 Scenario 2
 
+## Pseudo code
+Describe the pseudo code based on white box approach
+
