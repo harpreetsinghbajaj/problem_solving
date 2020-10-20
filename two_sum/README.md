@@ -41,13 +41,11 @@ Describe all the possible sad scenarios
 
 #### Alternative Scenario 1
 - Input: nums contain all negative numbers and target is negative
-- What the system has to do: The system has to process main scenario in absolute
-fashion
+- What the system has to do: The system has to process main scenario in absolute fashion
 
 #### Alternative Scenario 2
 - Input: nums contain both positive and negative numbers and target is positive
-- What the system has to do: The system will select one positive and one negative
-number such that nums[idx1] >= target and nums[idx2] <= 0
+- What the system has to do: The system will select one positive and one negative number such that nums[idx1] >= target and nums[idx2] <= 0
 
 #### Alternative Scenario 3
 - Input: nums contain both positive and negative numbers and target is negative
@@ -75,18 +73,17 @@ The system will process the input array to find out the two numbers such that
 they sum to target
 
 ### Main Scenario
-1. This shall describe the main scenario in black box section
-2. Sort the array nums in ascending order
-3. calculate target/2
-4. Use binary search to divide the array into parts at target/2
-5. Select a number from one part and seach for (target - number) in other part
+To solve the main scenario in black box section, follow the following steps:-
+1. Sort the array nums in ascending order
+2. calculate target/2
+3. Use binary search to divide the array into parts at target/2
+4. Select a number from one part and seach for (target - number) in other part
 
 ### Alternative Scenarios
 Describe all the possible sad scenarios
 
 #### Alternative Scenario 1
-Scenario 1
+To solve this scenario, the solution to main scenario has to be executed in absolute manner that is independent of the sign of numbers.
 
 #### Alternative Scenario 2
-Scenario 2
-
+To solve this scenario, the main scenario algorithm to be changed to divide the array in positive and negative numbers and then select a number in the negative array and search for target + mod(negative number) in the positive array to find the numbers.
