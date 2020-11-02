@@ -87,3 +87,13 @@ To solve this scenario, the solution to main scenario has to be executed in abso
 
 #### Alternative Scenario 2
 To solve this scenario, the main scenario algorithm to be changed to divide the array in positive and negative numbers and then select a number in the negative array and search for target + mod(negative number) in the positive array to find the numbers.
+
+#### Alternative Scenario 3
+To solve this scenario, the main scenario algorithm to be changed to divide the array in positive and negative numbers and then select a number in the positive array and search for target - (positive number) in the negative array to find the numbers.
+
+## Pseudo Code
+```c++
+function test() {
+ console.log("look ma’, no spaces");
+ }
+ ```
