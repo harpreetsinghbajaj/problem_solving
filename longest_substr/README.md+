@@ -1,0 +1,59 @@
+## Table of contents
+* [Problem Statement](#problem-statement)
+* [Black Box](#black-box)
+* [White Box](#white-box)
+
+## Problem Statement 
+https://leetcode.com/explore/interview/card/amazon/76/array-and-strings/2961/
+
+
+### Input Details
+s = string of characters 
+
+### Output Details
+l = length of substring 
+
+### Relation between input and output
+l <= strlen(s)
+Substring of s shall have no repeating character and shall have longest length.
+Substring means a group of adjacent characters. It is different from a subsequence. 
+
+### Assumptions
+Describe the assumptions
+
+### Constraints
+0 <= s.length <= 5 * 104
+s consists of English letters, digits, symbols and spaces.
+
+## Black Box
+The system accepts a string and outputs a length of longest substring which has non repeating characters 
+
+### Main Scenario
+String s with unique characters. So output will be same as the length of string s.
+
+### Alternative Scenarios
+Describe all the possible other scenarios
+
+#### Alternative Scenario 1
+String s with all the characters same. l will be 1
+
+#### Alternative Scenario 2
+String with length 1 or 0. l will be same as the length of s.
+
+## White Box
+Describe how the system has to do
+
+### Main Scenario
+Describe the basic happy scenario
+
+### Alternative Scenarios
+Describe all the possible sad scenarios
+
+#### Alternative Scenario 1
+Scenario 1
+
+#### Alternative Scenario 2
+Scenario 2
+
+## Pseudo code
+Describe the pseudo code based on white box approach
