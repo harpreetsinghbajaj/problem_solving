@@ -40,8 +40,11 @@ String s with all the characters same. l will be 1
 #### Alternative Scenario 2
 String with length 1 or 0. l will be same as the length of s.
 
+#### Alternative Scenario 3
+String has mix of characters. l will be the length of longest substring without repeating characters.
+
 ## White Box
-Describe how the system has to do
+The system has to process the string and find out the longest substring without non repeating characters. 
 
 ### Main Scenario
 Describe the basic happy scenario
