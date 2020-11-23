@@ -16,7 +16,10 @@ l = length of substring
 ### Relation between input and output
 l <= strlen(s)
 Substring of s shall have no repeating character and shall have longest length.
+
 Substring means a group of adjacent characters. It is different from a subsequence. 
+
+Non repeating does not mean that the characters of sub string cannot come anywhere else in the string. It means that the selected sub string shall have no repeated character.
 
 ### Assumptions
 Describe the assumptions
@@ -44,19 +47,22 @@ String with length 1 or 0. l will be same as the length of s.
 String has mix of characters. l will be the length of longest substring without repeating characters.
 
 ## White Box
-The system has to process the string and find out the longest substring without non repeating characters. 
+The system has to process the string and find out the longest substring without non repeating characters. one way is to process all posible sub strings and find out the sub strings without repeating characters and then select the maximum length. To find if the string has repeating characters in it or not use the array of integers indexed at ascii value of chacters.
 
 ### Main Scenario
-Describe the basic happy scenario
+A string with non repeating characters can be found when the counting array will never be having a value greater than 1 at any index. Then the output is the lenth of string.
 
 ### Alternative Scenarios
-Describe all the possible sad scenarios
+Describe all the possible other scenarios
 
 #### Alternative Scenario 1
-Scenario 1
+A string with all characters same can be detected using the fact that the value at the index equal to the ascii value of first chacter is equal to the length of string.
 
 #### Alternative Scenario 2
-Scenario 2
+A string with 0 or 1 length can be found using strlen.
+
+#### Alternative Scenario 3
+A string with mixed characters. Divide the string at index j such that in sub string from index 0 to j-1 the character at index j is at some in between location. The sub string from index j to length - 1 has character at index j at the begining
 
 ## Pseudo code
 Describe the pseudo code based on white box approach
