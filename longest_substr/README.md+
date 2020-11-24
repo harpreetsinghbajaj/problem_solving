@@ -66,3 +66,21 @@ A string with mixed characters. Divide the string at index j such that in sub st
 
 ## Pseudo code
 Describe the pseudo code based on white box approach
+
+int longestSubStrWithNonRepeatingCharsLen(str, startIdx) {
+int charCount[255] = {0};
+int subStrLen = 0;
+int i;
+
+for(i = startIdx; i < strlen(str); i++) {
+if(charCount[ascii(str[i])] == 0) {
+
+charCount[ascii(str[i])]++;
+subStrLen++;
+} else {
+break;
+}
+}
+
+return(subStrLen, longestSubStrWithNonRepeatingCharsLen(str, i));
+}
