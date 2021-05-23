@@ -2,6 +2,8 @@
 * [Problem Statement](#problem-statement)
 * [Black Box](#black-box)
 * [White Box](#white-box)
+* [Pseudo Code](#Pseudo-Code)
+* [Test Cases](#Test-Cases)
 
 ## Problem Statement
 Describe the problem statement
@@ -53,4 +55,7 @@ Scenario 2
 
 ## Pseudo code
 Describe the pseudo code based on white box approach
+
+## Test Cases
+Describe the testcases
 
